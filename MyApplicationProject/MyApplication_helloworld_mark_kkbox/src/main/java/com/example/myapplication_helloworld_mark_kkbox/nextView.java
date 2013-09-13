@@ -11,7 +11,7 @@ import android.view.*;
 import android.widget.*;
 import android.content.Intent;
 
-public class nextView extends Activity{
+public class nextView extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,54 +23,46 @@ public class nextView extends Activity{
 	}
 
 	@Override
-	public void onBackPressed()
-	{
-		// 按下 Back 鍵
-		super.onBackPressed();
-
-		Log.d("LOG_TAG.onBackPressed", "nextView.onBackPressed");
-	}
-
-	@Override
-	protected void onStart()
-	{
+	protected void onStart() {
 		super.onStart();
 
 		Log.d("LOG_TAG.onStart", "nextView.onStart");
 	}
 
 	@Override
-	protected void onResume()
-	{
+	protected void onResume() {
 		super.onResume();
 
 		Log.d("LOG_TAG.onResume", "nextView.onResume");
 	}
 
 	@Override
-	protected void onPause()
-	{
+	protected void onPause() {
 		super.onPause();
 
 		Log.d("LOG_TAG.onPause", "nextView.onPause");
 	}
 
 	@Override
-	protected void onStop()
-	{
+	protected void onStop() {
 		super.onStop();
 
 		Log.d("LOG_TAG.onStop", "nextView.onStop");
 	}
 
 	@Override
-	protected void onDestroy()
-	{
+	protected void onDestroy() {
 		super.onDestroy();
 
 		Log.d("LOG_TAG.onDestroy", "nextView.onDestroy");
 	}
 
+	@Override
+	public void onBackPressed() {
+		// 按下 Back 鍵
+		super.onBackPressed();
 
+		Log.d("LOG_TAG.onBackPressed", "nextView.onBackPressed");
+	}
 
 }
