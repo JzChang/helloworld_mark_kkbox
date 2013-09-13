@@ -31,15 +31,6 @@ public class downloadService extends Service {
 	 */
 	class DownloadFileFromURL extends AsyncTask<String, String, String> {
 
-		/**
-		 * Before starting background thread
-		 * Show Progress Bar Dialog
-		 */
-		@Override
-		protected void onPreExecute() {
-			super.onPreExecute();
-			//showDialog(progress_bar_type);
-		}
 
 		/**
 		 * Downloading file in background thread
