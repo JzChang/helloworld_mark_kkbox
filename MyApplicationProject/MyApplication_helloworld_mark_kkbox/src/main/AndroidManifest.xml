@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication_helloworld_mark_kkbox"
-    android:versionCode="1"
-    android:versionName="1.0" >
+          package="com.example.myapplication_helloworld_mark_kkbox"
+          android:versionCode="1"
+          android:versionName="1.0">
 
-    <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="16" />
+	<uses-sdk
+			android:minSdkVersion="7"
+			android:targetSdkVersion="16"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+	<application
+			android:allowBackup="true"
+			android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme">
 
-        <activity
-            android:name="com.example.myapplication_helloworld_mark_kkbox.helloworld"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+		<activity
+				android:name=".helloworldActivity"
+				android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
 
-        <activity
-            android:name="com.example.myapplication_helloworld_mark_kkbox.nextView"
-            android:label="@string/app_name" >
-        </activity>
-    </application>
+		<activity
+				android:name=".nextViewActivity"
+				android:label="@string/app_name">
+		</activity>
+
+		<service android:name=".downloadService" android:enabled="true"/>
+
+	</application>
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>
