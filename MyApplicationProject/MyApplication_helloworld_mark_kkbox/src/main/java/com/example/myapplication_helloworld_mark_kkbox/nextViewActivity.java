@@ -11,7 +11,7 @@ import android.view.*;
 import android.widget.*;
 import android.content.Intent;
 
-public class nextView extends Activity {
+public class nextViewActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,42 +19,49 @@ public class nextView extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.next_view);
 
-		Log.d("LOG_TAG.onCreate", "nextView.onCreate");
+		Log.d("LOG_TAG.onCreate", "nextViewActivity.onCreate");
 	}
 
 	@Override
 	protected void onStart() {
 		super.onStart();
 
-		Log.d("LOG_TAG.onStart", "nextView.onStart");
+		Log.d("LOG_TAG.onStart", "nextViewActivity.onStart");
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
 
-		Log.d("LOG_TAG.onResume", "nextView.onResume");
+		Log.d("LOG_TAG.onResume", "nextViewActivity.onResume");
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
 
-		Log.d("LOG_TAG.onPause", "nextView.onPause");
+		Log.d("LOG_TAG.onPause", "nextViewActivity.onPause");
 	}
 
 	@Override
 	protected void onStop() {
 		super.onStop();
 
-		Log.d("LOG_TAG.onStop", "nextView.onStop");
+		Log.d("LOG_TAG.onStop", "nextViewActivity.onStop");
 	}
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 
-		Log.d("LOG_TAG.onDestroy", "nextView.onDestroy");
+		Log.d("LOG_TAG.onDestroy", "nextViewActivity.onDestroy");
+	}
+
+	@Override
+	protected void  onRestart () {
+		super.onRestart();
+
+		Log.d("LOG_TAG.onRestart", "nextViewActivity.onRestart");
 	}
 
 	@Override
@@ -62,7 +69,7 @@ public class nextView extends Activity {
 		// 按下 Back 鍵
 		super.onBackPressed();
 
-		Log.d("LOG_TAG.onBackPressed", "nextView.onBackPressed");
+		Log.d("LOG_TAG.onBackPressed", "nextViewActivity.onBackPressed");
 	}
 
 }
