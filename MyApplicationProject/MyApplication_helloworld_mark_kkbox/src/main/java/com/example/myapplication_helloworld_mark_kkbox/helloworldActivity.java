@@ -9,16 +9,13 @@ import android.content.Intent;
 
 public class helloworldActivity extends Activity {
 
-
 	private Button.OnClickListener buttonStartDownloadOnClick = new Button.OnClickListener() {
 		public void onClick(View v) {
 			Toast.makeText(v.getContext(), R.string.pressed_button_download, Toast.LENGTH_SHORT).show();
 
-
 			// 啟動下載資料
 			Intent intent = new Intent(helloworldActivity.this, downloadService.class);
 			startService(intent);
-
 		}
 	};
 
@@ -41,7 +38,6 @@ public class helloworldActivity extends Activity {
 
 		buttonStartDownload.setOnClickListener(buttonStartDownloadOnClick);
 		buttonNext.setOnClickListener(buttonNextOnClick);
-
 	}
 
 	/*
@@ -101,5 +97,4 @@ public class helloworldActivity extends Activity {
 		intent.setClass(this, nextViewActivity.class);
 		startActivity(intent);
 	}
-
 }
